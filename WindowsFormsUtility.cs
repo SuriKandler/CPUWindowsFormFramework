@@ -39,6 +39,11 @@ namespace CPUWindowsFormFramework
                 lst.DataBindings.Add("SelectedValue", targetdt, lst.ValueMember, false, DataSourceUpdateMode.OnPropertyChanged);
             }       
         }
+
+        //public static void SetCheckedBinding(CheckBox check, BindingSource bindsource)
+        //{
+        //    check.DataBindings.Add("Checked", bindsource, "check", false, DataSourceUpdateMode.OnPropertyChanged);
+        //}
         public static void FormatGridForSearchResults(DataGridView grid, string tablename)
         {
             grid.AllowUserToAddRows = false;
@@ -94,6 +99,7 @@ namespace CPUWindowsFormFramework
             return value;
         }
 
+    
         public static void AddComboBoxToGrid(DataGridView grid, DataTable datasource, string tablename, string displaymember)
         {
             DataGridViewComboBoxColumn c = new();
@@ -156,5 +162,6 @@ namespace CPUWindowsFormFramework
                 }
             }
         }
+        
     }
 }
