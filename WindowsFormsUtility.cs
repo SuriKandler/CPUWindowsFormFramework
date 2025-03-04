@@ -10,7 +10,7 @@ namespace CPUWindowsFormFramework
             string controlname = ctrl.Name.ToLower();
             string controltype = controlname.Substring(0, 3);
             string columnname = controlname.Substring(3);
-
+           
             switch (controltype)
             {
                 case "txt":
